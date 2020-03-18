@@ -1,0 +1,1 @@
+for /r %%I in (*.png) do magick convert -dispose 3 -delay 10 -loop 0 "%%~fsI" -crop 512x128 +repage "%%~nI.gif"
